@@ -7,6 +7,21 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+body,
+:root {
+  height: 100%;
+  font-family: var(--font-poppins);
+}
+
+html,
+body {
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
