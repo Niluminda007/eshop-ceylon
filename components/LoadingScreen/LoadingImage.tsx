@@ -13,7 +13,7 @@ const logoVariants = {
   },
 };
 
-const Logo = () => {
+const LoadingImage = () => {
   return (
     <motion.div variants={logoVariants} initial="hidden" animate="visible">
       <CeylonLogo width={400} height={400} />
@@ -21,4 +21,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default LoadingImage;
