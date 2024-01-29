@@ -1,5 +1,7 @@
+"use client";
+
 import CategoryBar from "@/components/Home/CategoryBar";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Home = () => {
   return (

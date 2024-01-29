@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Chili Powder",
+    "price": 2,
+    "category": "Spices",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Curry Powder",
+    "price": 2,
+    "category": "Spices",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Curry Powder",
+    "price": 2,
+    "category": "Spices",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Roasted Curry Powder",
+    "price": 2,
+    "category": "Spices",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Chili Flex",
+    "price": 2,
+    "category": "Spices",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Rampe",
+    "price": 2,
+    "category": "Spices",
+    "weight": "50g",
+    "inStock": true
+  },
+  {
+    "name": "Karapincha",
+    "price": 2,
+    "category": "Spices",
+    "weight": "50g",
+    "inStock": true
+  },
+  {
+    "name": "Cardamom",
+    "price": 1.2,
+    "category": "Spices",
+    "weight": "8g",
+    "inStock": true
+  },
+  {
+    "name": "Maliban Gold Marie",
+    "price": 1.9,
+    "category": "Biscuits",
+    "weight": "80g",
+    "inStock": true
+  },
+  {
+    "name": "Maliban Chocolate Biscuits",
+    "price": 2.1,
+    "category": "Biscuits",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Munchee Cream Cracker Super",
+    "price": 2.2,
+    "category": "Biscuits",
+    "weight": "125g",
+    "inStock": true
+  },
+  {
+    "name": "Munchee Lemon Puff",
+    "price": 2.1,
+    "category": "Biscuits",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Munchee Chocalate Puff",
+    "price": 2.1,
+    "category": "Biscuits",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Munchee Hawainee Cookies",
+    "price": 2.1,
+    "category": "Biscuits",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Ginger Biscuits",
+    "price": 2.1,
+    "category": "Biscuits",
+    "weight": "100g",
+    "inStock": true
+  },
+  {
+    "name": "Samaposha",
+    "price": 2.9,
+    "category": "Biscuits",
+    "weight": "200g",
+    "inStock": true
+  },
+  {
+    "name": "Chili Pastes",
+    "price": 5.99,
+    "category": "Packaged Foods",
+    "weight": "250g",
+    "inStock": false
+  },
+  {
+    "name": "Brinjal Moju (Batumoju)",
+    "price": 4.49,
+    "category": "Packaged Foods",
+    "weight": "200g",
+    "inStock": true
+  },
+  {
+    "name": "Fried Dried Sprats (Halmasso Badum)",
+    "price": 5.99,
+    "category": "Packaged Foods",
+    "weight": "200g",
+    "inStock": false
+  },
+  {
+    "name": "Coconut Sambol",
+    "price": 5.99,
+    "category": "Packaged Foods",
+    "weight": "325g",
+    "inStock": false
+  },
+  {
+    "name": "Dry Sprats (Halmasso)",
+    "price": 3.5,
+    "category": "Other Products",
+    "weight": "200g",
+    "inStock": true
+  },
+  {
+    "name": "Soya meat",
+    "price": 2.1,
+    "category": "Other Products",
+    "weight": "90g",
+    "inStock": true
+  },
+  {
+    "name": "Red Rice",
+    "price": 4.1,
+    "category": "Other Products",
+    "weight": "400g",
+    "inStock": true
+  },
+  {
+    "name": "Koththu Mee",
+    "price": 1.9,
+    "category": "Other Products",
+    "weight": "80g",
+    "inStock": true
+  },
+  {
+    "name": "Raththi Milk Powder",
+    "price": 3.99,
+    "category": "Other Products",
+    "weight": "200g",
+    "inStock": true
+  },
+  {
+    "name": "Milo",
+    "price": 4.39,
+    "category": "Other Products",
+    "weight": "200g",
+    "inStock": true
+  },
+  {
+    "name": "Pol Toffe packets",
+    "price": 2.89,
+    "category": "Other Products",
+    "weight": "175g",
+    "inStock": true
+  },
+  {
+    "name": "Mixer Bite",
+    "price": 3.1,
+    "category": "Other Products",
+    "weight": "200g",
+    "inStock": true
+  },
+  {
+    "name": "EGB",
+    "price": 2.99,
+    "category": "Other Products",
+    "weight": "250ml",
+    "inStock": true
+  },
+  {
+    "name": "Pepper Powder",
+    "price": 2,
+    "category": "Spices",
+    "weight": "50g",
+    "inStock": true
+  },
+  {
+    "name": "Buriyani Mix",
+    "price": 2.19,
+    "category": "Spices",
+    "weight": "50g",
+    "inStock": true
+  },
+  {
+    "name": "MD Jam",
+    "price": 4.99,
+    "category": "Other Products",
+    "weight": "300g",
+    "inStock": true
+  },
+  {
+    "name": "Watalappam Pack",
+    "price": 3.99,
+    "category": "Other Products",
+    "weight": "220g",
+    "inStock": true
+  },
+  {
+    "name": "Faluda",
+    "price": 2.39,
+    "category": "Other Products",
+    "weight": "120g",
+    "inStock": true
+  }
+]
