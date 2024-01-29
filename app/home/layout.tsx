@@ -6,7 +6,7 @@ type HomeLayOutProps = {
 
 const HomeLayOut = ({ children }: HomeLayOutProps) => {
   return (
-    <div className="w-full h-full flex flex-col bg-white">
+    <div className="w-full h-full flex flex-col  bg-white">
       <Header />
       {children}
     </div>
