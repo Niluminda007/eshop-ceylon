@@ -522,13 +522,12 @@ const products: ProductType[] = [
       id: 1,
       name: "Spices",
     },
-    description:
-      "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/buriyani_mix_bvoxj3.jpg",
+    description: "",
     weight: "50g",
     inStock: true,
     images: [
       {
-        url: "",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/buriyani_mix_bvoxj3.jpg",
       },
     ],
   },
