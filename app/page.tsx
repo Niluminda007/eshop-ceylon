@@ -1,8 +1,9 @@
 "use client";
 
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
-import HomePage from "@/components/Home/HomePage";
+
 import { useState, useEffect } from "react";
+import HomeContainter from "@/components/Home/HomeContainer";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -14,7 +15,7 @@ const App = () => {
   //   return () => clearTimeout(loadingTimeOut);
   // }, []);
 
-  return <>{isLoading ? <LoadingScreen /> : <HomePage />}</>;
+  return <>{isLoading ? <LoadingScreen /> : <HomeContainter />}</>;
 };
 
 export default App;

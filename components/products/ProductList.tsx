@@ -13,8 +13,7 @@ const ProductList = ({ products }: ProductListProps) => {
         <div className="flex flex-col" key={product.id}>
           <Image
             src={product.images[0].url}
-            className="w-64 h-auto"
-            width="64"
+            width="300"
             height="120"
             alt={`${product.name}_image`}
           />

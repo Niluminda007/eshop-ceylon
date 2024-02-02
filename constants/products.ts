@@ -14,7 +14,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/chilli_powder_u46ps1.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/chilli_powder_u46ps1.jpg",
       },
     ],
   },
@@ -31,7 +31,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/chicken_curry_powder_cwmwqx.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/chicken_curry_powder_cwmwqx.jpg",
       },
     ],
   },
@@ -48,7 +48,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625122/eshop-ceylon/spices/amu_thunapaha_kudu_fgwh8o.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/amu_thunapaha_kudu_fgwh8o.jpg",
       },
     ],
   },
@@ -65,7 +65,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625122/eshop-ceylon/spices/badapu_thunapaha_kudu_ws1tqr.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/badapu_thunapaha_kudu_ws1tqr.jpg",
       },
     ],
   },
@@ -82,7 +82,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/kali_miris_r1yakk.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/kali_miris_r1yakk.jpg",
       },
     ],
   },
@@ -99,7 +99,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625124/eshop-ceylon/spices/rampe_gh9d0e.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/rampe_gh9d0e.jpg",
       },
     ],
   },
@@ -116,7 +116,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/curry_leaves_udjmcn.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/curry_leaves_udjmcn.jpg",
       },
     ],
   },
@@ -133,7 +133,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625626/eshop-ceylon/spices/cardamam_fbusnw.webp",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/cardamam_fbusnw.webp",
       },
     ],
   },
@@ -150,7 +150,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625126/eshop-ceylon/biscuits/gold_marie_ulkkly.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/gold_marie_ulkkly.jpg",
       },
     ],
   },
@@ -167,7 +167,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625125/eshop-ceylon/biscuits/chocalte_biscuits_xmi5hd.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/chocalte_biscuits_xmi5hd.jpg",
       },
     ],
   },
@@ -184,7 +184,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625127/eshop-ceylon/biscuits/super_cream_cracker_uc6ocp.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/super_cream_cracker_uc6ocp.jpg",
       },
     ],
   },
@@ -201,7 +201,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625126/eshop-ceylon/biscuits/lemon_puff_yrswwa.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/lemon_puff_yrswwa.jpg",
       },
     ],
   },
@@ -218,7 +218,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625125/eshop-ceylon/biscuits/chocalte_puff_x0y2uh.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/chocalte_puff_x0y2uh.jpg",
       },
     ],
   },
@@ -235,7 +235,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625126/eshop-ceylon/biscuits/hawaian_cookies_zexnnm.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/hawaian_cookies_zexnnm.jpg",
       },
     ],
   },
@@ -252,7 +252,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625125/eshop-ceylon/biscuits/ginger_biscuits_ctgw0y.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/ginger_biscuits_ctgw0y.jpg",
       },
     ],
   },
@@ -269,7 +269,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625801/eshop-ceylon/biscuits/samaposha_amhtth.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/biscuits/samaposha_amhtth.jpg",
       },
     ],
   },
@@ -286,7 +286,7 @@ const products: ProductType[] = [
     inStock: false,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625132/eshop-ceylon/packaged_foods/chillipaste_packaged_mrkcyu.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/packaged_foods/chillipaste_packaged_mrkcyu.jpg",
       },
     ],
   },
@@ -303,7 +303,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625131/eshop-ceylon/packaged_foods/batumoju_packaged_tzrjaq.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/packaged_foods/batumoju_packaged_tzrjaq.jpg",
       },
     ],
   },
@@ -320,7 +320,7 @@ const products: ProductType[] = [
     inStock: false,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625132/eshop-ceylon/packaged_foods/halmasso_packaged_qryk7w.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/packaged_foods/halmasso_packaged_qryk7w.jpg",
       },
     ],
   },
@@ -337,7 +337,7 @@ const products: ProductType[] = [
     inStock: false,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625133/eshop-ceylon/packaged_foods/sambol_packaged_y4zukl.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/packaged_foods/sambol_packaged_y4zukl.jpg",
       },
     ],
   },
@@ -354,7 +354,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625127/eshop-ceylon/other_products/dried_sprats_v66eqi.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/dried_sprats_v66eqi.jpg",
       },
     ],
   },
@@ -371,10 +371,10 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625131/eshop-ceylon/other_products/soya_meat_prawns_ig0gfk.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/soya_meat_prawns_ig0gfk.jpg",
       },
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625131/eshop-ceylon/other_products/soya_meat_dallo_wb4kgy.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/soya_meat_dallo_wb4kgy.jpg",
       },
     ],
   },
@@ -391,7 +391,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625130/eshop-ceylon/other_products/red_rice_ytuorp.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/red_rice_ytuorp.jpg",
       },
     ],
   },
@@ -408,7 +408,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625128/eshop-ceylon/other_products/kottu_mee_qewzwo.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/kottu_mee_qewzwo.jpg",
       },
     ],
   },
@@ -425,7 +425,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625129/eshop-ceylon/other_products/raththi_milk_xwb4rz.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/raththi_milk_xwb4rz.jpg",
       },
     ],
   },
@@ -442,7 +442,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625128/eshop-ceylon/other_products/milo_zl5n85.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/milo_zl5n85.jpg",
       },
     ],
   },
@@ -459,7 +459,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625129/eshop-ceylon/other_products/pol_toffee_nc2vze.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/pol_toffee_nc2vze.jpg",
       },
     ],
   },
@@ -476,7 +476,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625129/eshop-ceylon/other_products/mixer_bite_nuwmkg.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/mixer_bite_nuwmkg.jpg",
       },
     ],
   },
@@ -493,7 +493,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625127/eshop-ceylon/other_products/EGB_bl7mcs.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/EGB_bl7mcs.jpg",
       },
     ],
   },
@@ -510,7 +510,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625124/eshop-ceylon/spices/pepper_yciim5.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/pepper_yciim5.jpg",
       },
     ],
   },
@@ -527,7 +527,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/buriyani_mix_bvoxj3.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/buriyani_mix_bvoxj3.jpg",
       },
     ],
   },
@@ -544,7 +544,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625123/eshop-ceylon/spices/buriyani_mix_bvoxj3.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/spices/buriyani_mix_bvoxj3.jpg",
       },
     ],
   },
@@ -561,7 +561,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625131/eshop-ceylon/other_products/watalappan_pack_hvt7gr.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/watalappan_pack_hvt7gr.jpg",
       },
     ],
   },
@@ -578,7 +578,7 @@ const products: ProductType[] = [
     inStock: true,
     images: [
       {
-        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/v1706625128/eshop-ceylon/other_products/faluda_ljmfny.jpg",
+        url: "https://res.cloudinary.com/dij3i3ar9/image/upload/f_auto,q_auto/v1/eshop-ceylon/other_products/faluda_ljmfny.jpg",
       },
     ],
   },

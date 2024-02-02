@@ -1,25 +1,10 @@
 "use client";
 
-import CategoryBar from "@/components/Home/CategoryBar";
-import Spinner from "@/components/Loaders/Spinner";
-import React, { useEffect } from "react";
+import React from "react";
+import Home from "@/components/Home/HomeContainer";
 
-import { useFetchProductByCategory } from "@/hooks/useProducts";
-import ProductList from "@/components/products/ProductList";
-
-const Home = () => {
-  const { fetchProductByCategory, isLoading, data } =
-    useFetchProductByCategory();
-  useEffect(() => {
-    fetchProductByCategory("Spices");
-  }, []);
-
-  return (
-    <div className="w-full flex flex-col px-16 py-8 ">
-      <CategoryBar />
-      {isLoading ? <Spinner /> : <ProductList products={data} />}
-    </div>
-  );
+const Page = () => {
+  return <Home />;
 };
 
-export default Home;
+export default Page;
