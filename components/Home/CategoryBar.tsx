@@ -20,9 +20,9 @@ const CategoryBar = () => {
       variants={categoryVariants}
       initial="hidden"
       animate="visible"
-      className="flex w-full justify-center gap-8">
+      className="flex w-full justify-center gap-2 sm:gap-8">
       {categoires.map((category, index) => (
-        <div key={index} className="text-black text-xl ">
+        <div key={index} className="text-black text-sm sm:text-2xl ">
           {category.name}
         </div>
       ))}

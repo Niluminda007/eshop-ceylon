@@ -4,6 +4,7 @@ import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
 import { useState, useEffect } from "react";
 import HomeContainter from "@/components/Home/HomeContainer";
+import { redirect } from "next/navigation";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -14,8 +15,15 @@ const App = () => {
 
     return () => clearTimeout(loadingTimeOut);
   }, []);
+  if (!isLoading) {
+    redirect("/home");
+  }
 
-  return <>{isLoading ? <LoadingScreen /> : <HomeContainter />}</>;
+  return (
+    <>
+      <LoadingScreen />
+    </>
+  );
 };
 
 export default App;

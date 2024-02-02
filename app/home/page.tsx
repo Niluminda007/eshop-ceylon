@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import Home from "@/components/Home/HomeContainer";
+import HomeContainer from "@/components/Home/HomeContainer";
 
 const Page = () => {
-  return <Home />;
+  return <HomeContainer />;
 };
 
 export default Page;
