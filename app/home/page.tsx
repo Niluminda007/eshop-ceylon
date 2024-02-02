@@ -1,14 +1,10 @@
 "use client";
 
-import CategoryBar from "@/components/Home/CategoryBar";
-import React, { useEffect } from "react";
+import React from "react";
+import Home from "@/components/Home/HomeContainer";
 
-const Home = () => {
-  return (
-    <div className="w-full h-full flex flex-col px-16 py-8 ">
-      <CategoryBar />
-    </div>
-  );
+const Page = () => {
+  return <Home />;
 };
 
-export default Home;
+export default Page;
