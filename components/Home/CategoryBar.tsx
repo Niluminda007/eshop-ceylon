@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { categoires } from "@/constants/constants";
 import { motion } from "framer-motion";
+import { CategoryType } from "@/types/types";
 
 const categoryVariants = {
   hidden: {
@@ -15,6 +16,10 @@ const categoryVariants = {
 };
 
 const CategoryBar = () => {
+  const [activeCategory, setActiveCategory] = useState<CategoryType>({
+    id: 0,
+    name: "All",
+  });
   return (
     <motion.div
       variants={categoryVariants}

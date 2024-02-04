@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { useFetchProductByCategory } from "@/hooks/useProducts";
-import ProductList from "@/components/products/ProductList";
+import ProductList from "@/components/ProuctList/ProductList";
 
 const homeVariants = {
   hidden: {
