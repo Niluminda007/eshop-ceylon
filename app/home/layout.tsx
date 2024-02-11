@@ -1,4 +1,7 @@
+"use client";
+
 import Header from "@/components/Header/Header";
+import AppProvider from "@/context/AppContext";
 
 type HomeLayOutProps = {
   children: React.ReactNode;
@@ -6,9 +9,9 @@ type HomeLayOutProps = {
 
 const HomeLayOut = ({ children }: HomeLayOutProps) => {
   return (
-    <div className="w-full h-full flex flex-col  bg-white">
+    <div className="w-full flex flex-col bg-white min-h-screen ">
       <Header />
-      {children}
+      <AppProvider>{children}</AppProvider>
     </div>
   );
 };

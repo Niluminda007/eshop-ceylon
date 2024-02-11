@@ -5,11 +5,17 @@ import Product from "@/models/models";
 
 export async function POST(req: NextRequest) {
   try {
-    const { categoryName } = await req.json();
+    let { categoryName } = await req.json();
     await connectToDB();
-    const products: ProductType[] = await Product.find({
-      "category.name": categoryName,
-    });
+    let products: ProductType[] = [];
+
+    categoryName = (categoryName as string).replace("%20", " ");
+    if (categoryName === "All") {
+      products = await Product.find({});
+    } else {
+      products = await Product.find({ "category.name": categoryName });
+    }
+
     return NextResponse.json(products);
   } catch (error) {
     console.error("Error fetching products ", error);
