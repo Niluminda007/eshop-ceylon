@@ -1,5 +1,6 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { ImageType } from "@/types/types";
+import { CldImage } from "next-cloudinary";
 import React from "react";
 type ProdcutListHeaderProps = {
   images: ImageType[];
@@ -9,12 +10,13 @@ type ProdcutListHeaderProps = {
 const ProdcutListHeader = ({ images, productName }: ProdcutListHeaderProps) => {
   const { isMobile } = useMediaQuery();
   return (
-    <img
+    <CldImage
       src={images[0].url}
-      className="w-[12.5rem] sm:w-[386px] object-contain transition-all ease-linear delay-200 max-h-[386px]"
-      width={!isMobile ? "386" : "200"}
-      height="auto"
+      className="object-contain transition-all ease-linear delay-200 "
       alt={`${productName}_image`}
+      width="386"
+      height="386"
+      sizes="(max-width: 480px) 100vw, 50vw"
     />
   );
 };
