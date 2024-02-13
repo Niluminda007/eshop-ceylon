@@ -3,7 +3,9 @@ import { connectToDB } from "@/utils/database";
 import { ProductType } from "@/types/types";
 import Product from "@/models/models";
 
-export async function POST(req: NextRequest) {
+export async function POST(
+  req: NextRequest
+): Promise<NextResponse<ProductType[]> | Response> {
   try {
     const { categoryName } = await req.json();
     await connectToDB();
@@ -13,6 +15,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(products);
   } catch (error) {
     console.error("Error fetching products ", error);
-    return NextResponse.error;
+    return NextResponse.json(error);
   }
 }

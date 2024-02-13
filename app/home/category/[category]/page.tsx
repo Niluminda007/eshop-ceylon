@@ -6,7 +6,7 @@ import { useFetchProductByCategory } from "@/hooks/useProducts";
 import { useParams } from "next/navigation";
 import React, { useEffect } from "react";
 
-const page = () => {
+const Page = () => {
   const { activeCategory, changeActiveCategory } = useAppContext();
   const { fetchProductByCategory, isLoading, data } =
     useFetchProductByCategory();
@@ -19,4 +19,4 @@ const page = () => {
   return <>{isLoading ? <Spinner /> : <ProductList products={data} />}</>;
 };
 
-export default page;
+export default Page;

@@ -3,7 +3,6 @@
 import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
 import { useState, useEffect } from "react";
-import HomeContainter from "@/components/Home/HomeContainer";
 import { redirect } from "next/navigation";
 
 const App = () => {

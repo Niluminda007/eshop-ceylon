@@ -17,7 +17,7 @@ const productPageVariants = {
   },
 };
 
-const page = () => {
+const Page = () => {
   const params = useParams<{ id: string }>();
   const { isLoading, data, error, fetchProductByProductId } =
     useFetchProductByProductId();
@@ -31,10 +31,11 @@ const page = () => {
       variants={productPageVariants}
       initial="hidden"
       animate="visible"
-      className="w-full min-h-[100vh] h-full overflow-x-hidden  py-2 sm:py-8 relative ">
+      className="w-full min-h-[100vh] h-full overflow-x-hidden  py-2 sm:py-8 relative "
+    >
       {isLoading ? <Spinner /> : <ProdcutPageContainer product={data} />}
     </motion.div>
   );
 };
 
-export default page;
+export default Page;

@@ -9,6 +9,7 @@ type ProdcutListHeaderProps = {
 
 const ProdcutListHeader = ({ images, productName }: ProdcutListHeaderProps) => {
   const { isMobile } = useMediaQuery();
+  console.log(productName);
   return (
     <CldImage
       src={images[0].url}
@@ -16,7 +17,11 @@ const ProdcutListHeader = ({ images, productName }: ProdcutListHeaderProps) => {
       alt={`${productName}_image`}
       width="386"
       height="386"
+      format="webp"
+      quality="50"
+      loading={productName === "Chili Powder" ? "eager" : "lazy"}
       sizes="(max-width: 480px) 100vw, 50vw"
+      priority={productName === "Chili Powder"}
     />
   );
 };
