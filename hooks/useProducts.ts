@@ -11,7 +11,7 @@ const useFetchProductByCategory = () => {
     try {
       setIsLoading(true);
       const axiosInstance = createAxiosInstance();
-      const response = await axiosInstance.post("/products/category", {
+      const response = await axiosInstance.post("/fetch/category", {
         categoryName: categoryName,
       });
       setData(response.data);
@@ -32,7 +32,7 @@ const useFetchProductByProductId = () => {
   const fetchProductByProductId = async (productId: string) => {
     try {
       const axiosInstance = createAxiosInstance();
-      const response = await axiosInstance.post("/products/productId", {
+      const response = await axiosInstance.post("/fetch/products", {
         productId: productId,
       });
       setData(response.data);

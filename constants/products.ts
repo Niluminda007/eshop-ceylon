@@ -8,6 +8,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "Manufactured using premium quality dried chilli under the strict hygienic conditions. The products are packed in specially designed laminated pouches to preserve their freshness, flavor and to enhance the shelf life. ",
@@ -26,6 +28,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "This is an extraordinary spice mix formulated to enhance the natural flavor of raw and processed meat. The processing conditions are carefully controlled to preserve its unique flavor.",
@@ -44,6 +48,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "Curry powders is produced using highest quality ingredients such as Coriander,Cumin seed and fennel seed as the major ingredients.These products are specially formulated to enhance the flavor of cooked meat, fish, vegetables etc. No added artificial flavor enhancers such as MSG. Ingredients are thoroughly cleaned prior to milling and the milling is carried out under strict hygienic conditions. Products are packed in specially designed laminated pouches to preserve their freshness, flavor, and to enhance the shelf life.",
@@ -62,6 +68,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "Roasted Curry powders is produced using highest quality ingredients such as Coriander, Cumin seed and fennel seed as the major ingredients. These products are specially formulated to enhance the flavor of cooked meat, fish, vegetables etc. No added artificial flavor cantains such as MSG. Ingredients are thoroughly cleaned prior to milling and the milling is carried out under strict hygienic conditions. Products are packed in specially designed laminated pouches to preserve their freshness, flavor, and to enhance the shelf life",
@@ -80,6 +88,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "Chilli Pieces is manufactured using premium quality dried chilli under the strict hygienic conditions. The products are packed in specially designed laminated pouches to preserve their freshness, flavor and to enhance the shelf life. ",
@@ -98,6 +108,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "The leaves are thin long green leaves. The leaves can be used either fresh or dried. ... The leaves are a vital savoring agent used to savor curries, rice, savories and sweet dishes. Sometimes the rampe leaves are grinded and filtered to take out their zest and hue for cakes and sweets to give a lovely flavor.",
@@ -116,6 +128,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "Curry leaves are small in size and long, slender, and oval in shape narrowing to a point, averaging 2-4 centimeters in length and 1-2 centimeters in width. The shiny, dark green leaves grow pinnately along a stem, and each branch can hold up to twenty, tightly clustered leaves.",
@@ -134,6 +148,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Spices",
+      topLevelCategory: true,
     },
     description:
       "Popularly known as the 'Queen of Spices', 'Mc Currie' cardamoms are widely used in flavouring savoury and sweet dishes. The whole or ground cardamom adds a characteristic taste to meat and vegetable curries. Cardamoms can be used in cakes to give that subtle taste",
@@ -152,6 +168,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "An all-time children's favourite the Maliban Gold Marie biscuit comes in a handy size and a variety of packs. This biscuit, made with love, is packed with the wholesome goodness of milk and loads of essential vitamins. It is the mother's choice for their precious child.",
@@ -170,6 +188,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "Made from a generations-old secret recipe, using the world's finest cocoa beans that create the creamy delicious chocolate filling and give the biscuit a rich chocolate taste. Real Chocolate, Real Taste.",
@@ -188,6 +208,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "The jewel in our cracker crown, this iconic vitamin enriched cracker is light, flaky and sugar free, baked to contain air pockets on its surface for the perfect crisp.",
@@ -206,6 +228,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "Tangy lemon-flavoured sweet cream sandwiched between two very light and crispy scalloped-edged, sugar sprinkled golden biscuits.",
@@ -224,6 +248,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "A sweet Smooth flavoured chocolate cream between two crispy yet puffy biscuits",
@@ -242,6 +268,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "It is the true taste of Hawai, packed into an easy-to-serve pack. Although the biscuit resembles other Hawaiian Cookie products in the market in shape and size, they are miles apart from the rest; baked to crunchy perfection with an overwhelmingly rich burst of Coconut flavour.",
@@ -260,6 +288,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "Spicy and sweet punch of ginger biscuit adds a unique taste  that makes many people love it. Perfect partner to a hot cup of tea. You are sure to enjoy it over and over. ",
@@ -278,6 +308,8 @@ const products: ProductType[] = [
     category: {
       id: 2,
       name: "Biscuits",
+      path: "/Biscuits",
+      topLevelCategory: true,
     },
     description:
       "Samaposha is a pre-cooked cereal based nutritious supplement food which consist of corn, soya, green gram and rice. It is enriched with lot of vitamins and minerals. ",
@@ -296,6 +328,8 @@ const products: ProductType[] = [
     category: {
       id: 3,
       name: "Packaged Foods",
+      path: "/Packaged_Foods",
+      topLevelCategory: true,
     },
     description:
       "A blend of authentic ingredients, Chillie Paste is a 'rice puller' when combined into a menu featuring Yellow Rice, Ghee Rice, Fried Rice and even the good old plain white rice,will tantalize your taste buds and is a preservative free product. Chillie Paste is best consumed with Yellow Rice, Ghee Rice, Fried Rice, Nasigoreng and even plain rice. A light spread of Chinese Chillie Paste in a sandwich makes a great snack.",
@@ -314,6 +348,8 @@ const products: ProductType[] = [
     category: {
       id: 3,
       name: "Packaged Foods",
+      path: "/Packaged_Foods",
+      topLevelCategory: true,
     },
     description:
       "A favourite Sri Lankan dish, made in homes to preserve the seasonal aubergines. A sweet and spicy light pickle packed with flavours. Fried Aubergine (Brinjal), whole green chillies, fried sprats, and onions. Lightly spiced and preserved to readily bring the taste of Sri Lanka to your meals. The heat from the chillies is intricately woven through the subtle tanginess of the vinegar and the slight sweetness from the fried aubergines and onions married with the aroma of the fried sprats. All combine to bring complex yet delicate flavours together.",
@@ -332,6 +368,8 @@ const products: ProductType[] = [
     category: {
       id: 3,
       name: "Packaged Foods",
+      path: "/Packaged_Foods",
+      topLevelCategory: true,
     },
     description:
       "Fried Dried Sprats Badum is prepared with the finest ingredients and is taste bud tantalizing accompaniment with plain rice, coconut sambol and tempered dhal curry",
@@ -350,6 +388,8 @@ const products: ProductType[] = [
     category: {
       id: 3,
       name: "Packaged Foods",
+      path: "/Packaged_Foods",
+      topLevelCategory: true,
     },
     description:
       "Shreds of coconut married with dried red chilli, onion and spices. A staple of Sri Lankan cuisine. No Sri Lankan breakfast table is complete without it!",
@@ -368,6 +408,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "The product quality is very premium and we pack efficiently and parcel carefully so the quality of the product remains intact. It is a dry fish item. It is sun Dried, Sustainable, Sri Lankan fish.  Also named Sprat is the name applied to several species of small, oily fishes belonging to the herring family. They look like miniature sardines and are recognized by the sharp scales along the belly. … Products sold as having been prepared from anchovies and sardines are sometimes actually prepared from sprats.",
@@ -386,6 +428,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Enjoy the taste of an authentic Sri Lankan Dallo devil or Prawn Devil Flavor . Just add the blend of spices with chicken flavour, and enjoy with any meal. No added MSG or any artificial flavour enhancers.",
@@ -407,6 +451,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Richer in protein than white rice, Sri Lankan red rice is a gluten-free whole grain rice suitable for vegans, vegetarians, and vegans. To be cooked with coconut for a real trip to Sri Lankan lands.",
@@ -425,6 +471,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Prima Kottumee a second generation Noodle brand with the addition of a hot chillie Oil sachet as well as a spicy seasoning sachet holds a differentiated space of being the 'Hot & Spicy' Noodles. Prima KottuMee is the most preferred instant noodle brand in the island.",
@@ -443,6 +491,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Introducing the 200g pack of Ratthi Full Cream Milk Powder—a delightful choice for those who crave the wholesome goodness of full cream milk in a convenient powdered form. Immerse yourself in the rich and creamy taste that this milk powder offers, perfect for enhancing the flavor of your beverages, desserts, and culinary creations. Experience the ease of preparation and the versatility this product brings to your kitchen, all conveniently packaged to meet your culinary needs. Indulge in the satisfying experience of Ratthi Full Cream Milk Powder and elevate your culinary creations effortlessly.",
@@ -461,6 +511,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Natural goodness of cocoa, milk and malt to fuel you to take on your day.Contains ACTIV-GO with PROTOMALT, vitamins and minerals for nourishing energy",
@@ -479,6 +531,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description: "",
     weight: "175g",
@@ -496,6 +550,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Asiri Cocktail Mixture is the one of the most Quality & delicious food product in sri Lanka",
@@ -514,6 +570,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Experience the timeless taste of Elephant Ginger Beer (EGB), rooted in a recipe since 1896. Bursting with the bold essence of 100% locally sourced natural ginger, our beverage complements both Eastern and Western cuisines. Elevate your meals with EGB's spicy tang and earthy notes—a culinary essential. As the famous Sri Lankan saying goes, 'No EGB, No Food.",
@@ -532,6 +590,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Pepper Powder is manufactured using grade 1 pepper seeds produced in Kandy & Matale Districts to offer best quality product to our valued customers. Pepper seeds are thoroughly examined for fungal infestation and other impurities before grinding. Ppacked in laminated pouches to protect its freshness for a long period.",
@@ -550,6 +610,8 @@ const products: ProductType[] = [
     category: {
       id: 1,
       name: "Spices",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Biriyani Mix made with authentic herbs and spices to help you create deliciously flavourful, aromatic biriyani in your own homes in just 3 easy steps. No added MSG. No added artificial preserving ingredients. No added artificial flavours. No added artificial colours.",
@@ -568,6 +630,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Savor the exquisite blend of Pineapple, Mango, Papaw, Passion Fruit, and Lime in MD Mixed Fruit Jam. This delightful creation offers a perfect balance of sweetness and tanginess, enriched with real fruit juices. Crafted with care and a touch of natural mixed fruit flavor, it's a refreshing addition to your breakfast or snack. Enjoy the pure essence of handpicked fruits in every spoonful.",
@@ -586,6 +650,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Experience the rich delight of our Watalappam Pack a ready-to-eat Sri Lankan dessert bursting with traditional flavors. Savor the perfect blend of jaggery, coconut milk, and spices in this convenient treat. Enjoy the essence of Sri Lankan sweetness with ease.",
@@ -604,6 +670,8 @@ const products: ProductType[] = [
     category: {
       id: 4,
       name: "Other Products",
+      path: "/Other_Products",
+      topLevelCategory: false,
     },
     description:
       "Introducing Mortha Faluda Mix, a delightful blend of ingredients carefully packed to bring the essence of traditional faluda to your home. Simply mix our special faluda blend with vermicelli, rose syrup, sweet basil seeds, and milk to create a refreshing and indulgent faluda treat. Experience the authentic taste of Sri Lankan faluda with the convenience of Mortha Faluda Mix - a perfect companion for those craving a sweet and cooling dessert.",

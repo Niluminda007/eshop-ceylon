@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectToDB } from "@/utils/database";
-import { ProductType } from "@/types/types";
-import Product from "@/models/models";
+import { CategoryType, ProductType } from "@/types/types";
+import Product from "@/models/productModel";
+import Category from "@/models/categoryModel";
 
 export async function POST(
   req: NextRequest
@@ -11,7 +12,7 @@ export async function POST(
     await connectToDB();
     let products: ProductType[] = [];
 
-    categoryName = (categoryName as string).replace("%20", " ");
+    categoryName = (categoryName as string).replace("_", " ");
     if (categoryName === "All") {
       products = await Product.find({});
     } else {
@@ -21,6 +22,18 @@ export async function POST(
     return NextResponse.json(products);
   } catch (error) {
     console.error("Error fetching products ", error);
+    return NextResponse.json(error);
+  }
+}
+
+export async function GET(): Promise<NextResponse<CategoryType[]> | Response> {
+  try {
+    console.log("Hello");
+    await connectToDB();
+    const categoires: CategoryType[] = await Category.find({});
+    return NextResponse.json(categoires);
+  } catch (error) {
+    console.error("Error fetching categories ", error);
     return NextResponse.json(error);
   }
 }

@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 //   }
 // };
 
-const Page = () => {
+const Home = () => {
   return (
     <motion.div className="w-full ">
       <ImageSlider />
@@ -24,4 +24,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Home;

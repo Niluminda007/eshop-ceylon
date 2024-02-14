@@ -19,7 +19,7 @@ const productPageVariants = {
 
 const Page = () => {
   const params = useParams<{ id: string }>();
-  const { isLoading, data, error, fetchProductByProductId } =
+  const { isLoading, data, fetchProductByProductId } =
     useFetchProductByProductId();
 
   useEffect(() => {

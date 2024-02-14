@@ -1,4 +1,4 @@
-import Product from "@/models/models";
+import Product from "@/models/productModel";
 import { ProductType } from "@/types/types";
 
 import { connectToDB } from "@/utils/database";

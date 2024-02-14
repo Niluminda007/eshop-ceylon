@@ -9,7 +9,7 @@ type ProdcutListHeaderProps = {
 
 const ProdcutListHeader = ({ images, productName }: ProdcutListHeaderProps) => {
   const { isMobile } = useMediaQuery();
-  console.log(productName);
+
   return (
     <CldImage
       src={images[0].url}

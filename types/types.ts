@@ -1,6 +1,9 @@
 export interface CategoryType {
   id: number;
   name: string;
+  path: string;
+  image?: string;
+  topLevelCategory: boolean;
 }
 
 export interface ImageType {
@@ -20,4 +23,6 @@ export interface ProductType {
 export type AppContextType = {
   activeCategory: string;
   changeActiveCategory: (category: string) => void;
+  categoires: CategoryType[];
+  isLoading: Boolean;
 };
