@@ -4,7 +4,7 @@ export const defaultProduct: ProductType = {
   id: "",
   name: "",
   price: 0,
-  category: { id: 0, name: "" },
+  category: { id: 0, name: "", topLevelCategory: false, path: "" },
   description: "",
   weight: "",
   inStock: false,

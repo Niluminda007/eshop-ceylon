@@ -37,7 +37,11 @@ export const categoires: CategoryType[] = [
   },
 ];
 
-export const sliderImages = [sliderImageOne, sliderImageTwo, sliderImageThree];
+export const sliderImages = [
+  "eshop-ceylon/image_slider/slider_img_1_q8wl22.png",
+  "eshop-ceylon/image_slider/slider_img_2_bs6qed.png",
+  "eshop-ceylon/image_slider/slider_img_3_nzrygd.png",
+];
 
 export const shopByCategoryImages = [
   { name: "Spices", image: spiceCategoryImage, link: "/home/category/Spices" },

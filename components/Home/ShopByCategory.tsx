@@ -1,11 +1,22 @@
 "use client";
 import React from "react";
-import { shopByCategoryImages } from "@/constants/constants";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { useAppContext } from "@/context/AppContext";
 import { CldImage } from "next-cloudinary";
+import { delay, motion } from "framer-motion";
+
+const shopByCategoryVariants = {
+  hidden: {
+    y: +1000,
+  },
+  visible: {
+    y: 0,
+    transition: { type: "tween", stifness: "500", duration: 0.8, delay: 1 },
+  },
+};
+
 const ShopByCategory = () => {
   const { isMobile } = useMediaQuery();
   const shopByCategoryContent = (
@@ -20,17 +31,19 @@ const ShopByCategory = () => {
   const { categoires } = useAppContext();
 
   return (
-    <div className="w-full flex flex-col sm:flex-row gap-8 px-8 py-2 mt-12 mb-10">
+    <motion.div
+      className="w-full flex flex-col sm:flex-row gap-8 px-8 py-2 mt-12 mb-10"
+      initial="hidden"
+      animate="visible"
+      variants={shopByCategoryVariants}
+    >
       {isMobile && shopByCategoryContent}
       {categoires.length > 0 &&
         categoires.map(({ name, image, path, topLevelCategory }, index) => {
           return (
-            <>
+            <React.Fragment key={`${name}_${index}`}>
               {topLevelCategory && image != undefined && (
-                <div
-                  className="w-full sm:w-[33.3%] flex flex-col gap-16"
-                  key={`${name}_${index}`}
-                >
+                <div className="w-full sm:w-[33.3%] flex flex-col gap-16">
                   {!isMobile && name === "Biscuits" && shopByCategoryContent}(
                   <Link href={path}>
                     <div className="overflow-hidden cursor-pointer flex flex-col gap-8 group">
@@ -59,10 +72,10 @@ const ShopByCategory = () => {
                   )
                 </div>
               )}
-            </>
+            </React.Fragment>
           );
         })}
-    </div>
+    </motion.div>
   );
 };
 
