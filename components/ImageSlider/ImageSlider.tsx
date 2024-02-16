@@ -4,7 +4,7 @@ import { sliderImages } from "@/constants/constants";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { CldImage } from "next-cloudinary";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const sliderVariants = {
   hidden: {
@@ -59,7 +59,6 @@ const ImageSlider: React.FC = () => {
             alt={"slider-image"}
             width="1920"
             height="1080"
-            format="webp"
             loading={index == 1 ? "eager" : "lazy"}
             sizes="(max-width: 480px) 100vw, 50vw"
           />
