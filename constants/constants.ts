@@ -1,7 +1,4 @@
 import { CategoryType } from "@/types/types";
-import sliderImageOne from "@/public/assets/slider_img_1.png";
-import sliderImageTwo from "@/public/assets/slider_img_2.png";
-import sliderImageThree from "@/public/assets/slider_img_3.png";
 import spiceCategoryImage from "@/public/assets/spices_category.jpg";
 import bisuitsCategoryImage from "@/public/assets/biscuits_category.jpg";
 import packagedCategoryImage from "@/public/assets/packaged_category.png";

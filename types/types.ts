@@ -26,3 +26,18 @@ export type AppContextType = {
   categoires: CategoryType[];
   isLoading: Boolean;
 };
+
+export type UserLogin = {
+  userName: string;
+  password: string;
+};
+
+export type UserRegisterModel = {
+  name: string;
+  userName: string;
+  password: string;
+  confirmPassword: string;
+  telephone: string;
+  email: string;
+  address: string | null;
+};
