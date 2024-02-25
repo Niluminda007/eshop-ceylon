@@ -17,12 +17,12 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  height: 100%;
+  height: 100vh;
 }
 
-body {
+/* body {
   position: relative;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -79,3 +79,61 @@ body {
   background-color: rgba(104, 102, 102, 0.694);
   animation: expandBorder ease-in 0.2s;
 }
+
+.nav_category {
+  position: relative;
+}
+
+.nav_category::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: 0.2s linear all;
+  background-color: #1fb622;
+}
+.nav_category:hover::after {
+  width: 100%;
+}
+
+.nav_bar {
+  z-index: 100;
+}
+.nav_bar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 0;
+  z-index: 0;
+  transition: 0.2s linear all;
+  background-color: #eeeeee;
+}
+.nav_bar:hover::before {
+  height: 7.75rem;
+}
+
+.home_slider_bar::after {
+  content: "";
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  background-color: #eeeeee;
+}
+
+/* .home_slider_bar_item::after {
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #eeeeee;
+} */

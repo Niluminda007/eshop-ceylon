@@ -1,14 +1,24 @@
 import React from "react";
+interface SpinnerProps {
+  color: string;
+  size: string;
+  loadingText: string;
+}
 
-const Spinner = () => {
+const Spinner = ({ color, size, loadingText }: SpinnerProps) => {
   return (
-    <div className="absolute left-[50%] translate-x-[-50%] top-[30%]  text-black  flex flex-col justify-center items-center gap-2">
+    <div className="relative w-full ">
       <div
-        className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-        role="status">
-        <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)] "></span>
+        style={{ color: color }}
+        className={` absolute left-[50%] translate-x-[-50%] top-[30%]  flex flex-col justify-center items-center gap-2`}>
+        <div
+          style={{ height: size, width: size }}
+          className="inline-block animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+          role="status">
+          <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)] "></span>
+        </div>
+        <span className="text-xl">{loadingText}</span>
       </div>
-      <span className="text-xl">Loading...</span>
     </div>
   );
 };

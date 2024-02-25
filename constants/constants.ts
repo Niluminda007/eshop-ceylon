@@ -1,7 +1,10 @@
-import { CategoryType } from "@/types/types";
+import { CategoryType, HomeSliderType } from "@/types/types";
 import spiceCategoryImage from "@/public/assets/spices_category.jpg";
 import bisuitsCategoryImage from "@/public/assets/biscuits_category.jpg";
 import packagedCategoryImage from "@/public/assets/packaged_category.png";
+import swanImage from "@/public/images/slider/swan.jpg";
+import flowerImage from "@/public/images/slider/flower.jpg";
+import cuteAnimal from "@/public/images/slider/cute_animal.jpg";
 
 export const categoires: CategoryType[] = [
   { id: 0, name: "All", path: "All", topLevelCategory: false },
@@ -52,4 +55,38 @@ export const shopByCategoryImages = [
     image: packagedCategoryImage,
     link: "/home/category/Packaged_Foods",
   },
+];
+
+export const navCategories = [
+  { id: "#all_products", name: "All Products", path: "/all" },
+  {
+    id: "#spices",
+    name: "Spices",
+    path: "/spices",
+  },
+  {
+    id: "#biscuits",
+    name: "Biscuits",
+    path: "/biscuits",
+  },
+  {
+    id: "#packaged_foods",
+    name: "Packaged Foods",
+    path: "/packaged_foods",
+  },
+  {
+    id: "#other_products",
+    name: "Other Products",
+    path: "/other_products",
+  },
+];
+
+export const homeSliderData: HomeSliderType[] = [
+  {
+    id: 1,
+    image: swanImage,
+    content: "Demo text displaying what should render",
+  },
+  { id: 2, image: cuteAnimal, content: "yes this is a demo content" },
+  { id: 3, image: flowerImage, content: "nahhh, are you sure" },
 ];

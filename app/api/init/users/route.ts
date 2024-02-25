@@ -4,7 +4,7 @@ import { connectToDB } from "@/utils/database";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const testUserLoginModel: UserRegisterModel = {
+  const testUserLoginModel = {
     name: "admin admin",
     userName: "admin",
     password: "admin",

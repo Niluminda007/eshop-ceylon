@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface CategoryType {
   id: number;
   name: string;
@@ -40,4 +42,18 @@ export type UserRegisterModel = {
   telephone: string;
   email: string;
   address: string | null;
+};
+
+export type CustomAxiosError = {
+  response?: {
+    data?: {
+      message: string;
+    };
+  };
+};
+
+export type HomeSliderType = {
+  id: number;
+  image: StaticImageData;
+  content: string;
 };
