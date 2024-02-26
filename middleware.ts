@@ -8,11 +8,11 @@ export async function middleware(request: NextRequest) {
 
   if (isProtectedRoute(request.url)) {
     if (!session) {
-      //check for validity of jwt
       const loginPageUrl = new URL("/auth/login", request.nextUrl.origin);
 
       return NextResponse.redirect(loginPageUrl.toString());
     }
+
     return await updateSession(request);
   }
 

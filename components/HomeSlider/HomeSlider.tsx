@@ -14,33 +14,36 @@ const HomeSlider: React.FC = () => {
 
   return (
     <div className="w-full h-[56.25rem] max-h-screen relative overflow-hidden flex items-center">
-      {homeSliderData.map((item, index) => (
-        <div
-          key={index}
-          className={`absolute top-0 left-[50%] -translate-x-[50%] transition ease-linear duration-100  h-[56.25rem] w-[100rem] rounded-bl-[100rem] rounded-br-[100rem]  ${
-            currentSlider.id === item.id ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-          style={{
-            backgroundImage: `url(${item.image.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}></div>
-      ))}
-      <div className="home_slider_bar absolute bottom-10 z-20 left-[50%] translate-x-[-50%] ">
-        <div className="relative flex gap-16">
-          {homeSliderData.map((_, index) => (
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 sm:w-[90%] w-[100%] sm:aspect-[16/9] aspect-[9/8] max-w-[1600px] sm:max-h-[calc(1600px*9/16)] max-h-[calc(1600px*9/8)] bg-black sm:rounded-bl-full rounded-bl-[90%] sm:rounded-br-full scale-[1.2] sm:scale-[1] rounded-br-[90%] overflow-hidden">
+        {homeSliderData.map((item, index) => (
+          <img
+            key={index}
+            src={item.image.src}
+            className={`${
+              currentSlider.id === item.id
+                ? "opacity-100 z-10"
+                : "opacity-0 z-0"
+            } absolute object-cover transition ease-linear duration-500`}
+          />
+        ))}
+        <div className="home_slider_bar absolute bottom-10 z-20 left-[50%] translate-x-[-50%] ">
+          <div className="relative flex gap-16">
+            {homeSliderData.map((_, index) => (
+              <div
+                key={index}
+                className="text-gray-light sm:text-lg text-[0.7rem] home_slider_bar_item cursor-pointer"
+                onClick={() => handleSliderChange(index)}
+              >
+                {index + 1}
+              </div>
+            ))}
             <div
-              key={index}
-              className="text-gray-light text-lg home_slider_bar_item cursor-pointer"
-              onClick={() => handleSliderChange(index)}>
-              {index + 1}
-            </div>
-          ))}
-          <div
-            className="absolute -bottom-[1rem] left-0 w-0 border-x-[6px] border-x-transparent border-b-[12px] border-b-gray-light transition ease-linear duration-[180ms]"
-            style={{
-              transform: `translateX(${(currentSlider.id - 1) * 70}px)`,
-            }}></div>
+              className="absolute -bottom-[1rem] -left-[3px] w-0 border-x-[6px] border-x-transparent border-b-[12px] border-b-gray-light transition ease-linear duration-[180ms]"
+              style={{
+                transform: `translateX(${(currentSlider.id - 1) * 70}px)`,
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     </div>
