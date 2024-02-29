@@ -81,12 +81,30 @@ export const navCategories = [
   },
 ];
 
+// export const homeSliderData: HomeSliderType[] = [
+//   {
+//     id: 1,
+//     image: swanImage,
+//     content: "Demo text displaying what should render",
+//   },
+//   { id: 2, image: cuteAnimal, content: "yes this is a demo content" },
+//   { id: 3, image: flowerImage, content: "nahhh, are you sure" },
+// ];
+
 export const homeSliderData: HomeSliderType[] = [
   {
     id: 1,
-    image: swanImage,
-    content: "Demo text displaying what should render",
+    image: "eshop-ceylon/image_slider/slider_img_1_q8wl22.png",
+    content: "Order Today and get free delivery On ypur products",
   },
-  { id: 2, image: cuteAnimal, content: "yes this is a demo content" },
-  { id: 3, image: flowerImage, content: "nahhh, are you sure" },
+  {
+    id: 2,
+    image: "eshop-ceylon/image_slider/slider_img_2_bs6qed.png",
+    content: "Sri Lankan Taste, Here in Europe",
+  },
+  {
+    id: 3,
+    image: "eshop-ceylon/image_slider/slider_img_3_nzrygd.png",
+    content: "Check Out our new Products",
+  },
 ];

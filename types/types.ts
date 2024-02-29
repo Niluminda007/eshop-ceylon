@@ -54,6 +54,6 @@ export type CustomAxiosError = {
 
 export type HomeSliderType = {
   id: number;
-  image: StaticImageData;
+  image: string;
   content: string;
 };
