@@ -22,8 +22,7 @@ const HomeSliderOverlay = ({
             <div
               key={index}
               className="text-gray-light md:text-lg w-6 flex justify-center items-center text-[0.7rem] home_slider_bar_item cursor-pointer"
-              onClick={() => handleSliderChange(index)}
-            >
+              onClick={() => handleSliderChange(index)}>
               {index + 1}
             </div>
           ))}
@@ -33,11 +32,10 @@ const HomeSliderOverlay = ({
               transform: `translateX(${
                 (currentSlider.id - 1) * (isMobile ? 56 : 88)
               }px)`,
-            }}
-          ></div>
+            }}></div>
         </div>
       </div>
-      <div
+      {/* <div
         style={{
           transform: `translateX(-${
             activeImageIndex * (100 / homeSliderData.length)
@@ -46,20 +44,18 @@ const HomeSliderOverlay = ({
           display: "flex",
           width: `${homeSliderData.length * 100}%`,
         }}
-        className="absolute md:top-0 top-full  md:h-[30rem] bg-transparent z-10 left-0  transition ease-linear overflow-hidden flex items-end justify-end"
-      >
+        className="absolute md:top-[50%] top-full  md:h-[30rem] bg-transparent z-10 left-0  transition ease-linear overflow-hidden flex items-center justify-end">
         {homeSliderData.map((item, index) => (
           <div
             key={index}
             style={{ width: `${100 / homeSliderData.length}%` }}
-            className="flex md:block justify-center md:pt-0 pt-8"
-          >
-            <p className="text-yellow-700 md:text-3xl text-2xl md:w-[30%] w-[60%]   text-center">
+            className="flex md:block justify-center md:pt-0 pt-8">
+            <p className="text-black md:text-3xl text-2xl md:w-[30%] w-[60%]    text-center mix-blend-difference">
               {item.content}
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

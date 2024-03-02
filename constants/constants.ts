@@ -95,7 +95,7 @@ export const homeSliderData: HomeSliderType[] = [
   {
     id: 1,
     image: "eshop-ceylon/image_slider/slider_img_1_q8wl22.png",
-    content: "Order Today and get free delivery On ypur products",
+    content: "Order Today and get free delivery On your products",
   },
   {
     id: 2,
