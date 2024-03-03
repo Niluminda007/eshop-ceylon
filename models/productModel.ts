@@ -1,4 +1,5 @@
 import { Schema, model, models } from "mongoose";
+import { date } from "yup";
 
 const ProductSchema = new Schema({
   id: {
@@ -27,7 +28,7 @@ const ProductSchema = new Schema({
   },
   description: {
     type: String,
-    default: "", // You can adjust the default value as needed
+    default: "",
   },
   weight: {
     type: String,
@@ -42,11 +43,19 @@ const ProductSchema = new Schema({
       {
         url: {
           type: String,
-          default: "", // You can adjust the default value as needed
+          default: "",
         },
       },
     ],
     default: [],
+  },
+  sellCount: {
+    type: Number,
+    default: 0,
+  },
+  productAddedDate: {
+    type: Date,
+    default: Date.now,
   },
 });
 

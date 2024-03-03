@@ -20,6 +20,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/chilli_powder_u46ps1.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "chicken_curry_powder_spices",
@@ -40,6 +42,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/chicken_curry_powder_cwmwqx.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "curry_powder_spices",
@@ -60,6 +64,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/amu_thunapaha_kudu_fgwh8o.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "roasted_curry_powder_spices",
@@ -80,6 +86,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/badapu_thunapaha_kudu_ws1tqr.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "chili_flex_spices",
@@ -100,6 +108,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/kali_miris_r1yakk.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "rampe_spices",
@@ -120,6 +130,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/rampe_gh9d0e.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "karapincha_spices",
@@ -140,6 +152,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/curry_leaves_udjmcn.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "cardamom_spices",
@@ -160,6 +174,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/cardamam_fbusnw.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "maliban_gold_marie_biscuits",
@@ -180,6 +196,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/gold_marie_ulkkly.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "maliban_chocolate_biscuits_biscuits",
@@ -200,6 +218,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/chocalte_biscuits_xmi5hd.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "munchee_cream_cracker_super_biscuits",
@@ -220,6 +240,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/super_cream_cracker_uc6ocp.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "munchee_lemon_puff_biscuits",
@@ -240,6 +262,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/lemon_puff_yrswwa.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "munchee_chocalate_puff_biscuits",
@@ -260,6 +284,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/chocalte_puff_x0y2uh.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "munchee_hawainee_cookies_biscuits",
@@ -280,6 +306,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/hawaian_cookies_zexnnm.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "ginger_biscuits_biscuits",
@@ -300,6 +328,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/ginger_biscuits_ctgw0y.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "samaposha_biscuits",
@@ -320,6 +350,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/biscuits/samaposha_amhtth.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "chili_pastes_packaged_foods",
@@ -340,6 +372,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/packaged_foods/chillipaste_packaged_mrkcyu.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "brinjal_moju_(batumoju)_packaged_foods",
@@ -360,6 +394,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/packaged_foods/batumoju_packaged_tzrjaq.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "fried_dried_sprats_(halmasso_badum)_packaged_foods",
@@ -380,6 +416,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/packaged_foods/halmasso_packaged_qryk7w.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "coconut_sambol_packaged_foods",
@@ -400,6 +438,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/packaged_foods/sambol_packaged_y4zukl.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "dry_sprats_(halmasso)_other_products",
@@ -420,6 +460,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/dried_sprats_v66eqi.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "soya_meat_other_products",
@@ -443,6 +485,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/soya_meat_dallo_wb4kgy.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "red_rice_other_products",
@@ -463,6 +507,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/red_rice_ytuorp.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "koththu_mee_other_products",
@@ -483,6 +529,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/kottu_mee_qewzwo.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "raththi_milk_powder_other_products",
@@ -503,6 +551,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/raththi_milk_xwb4rz.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "milo_other_products",
@@ -523,6 +573,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/milo_zl5n85.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "pol_toffe_packets_other_products",
@@ -542,6 +594,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/pol_toffee_nc2vze.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "mixer_bite_other_products",
@@ -562,6 +616,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/mixer_bite_nuwmkg.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "egb_other_products",
@@ -582,6 +638,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/EGB_bl7mcs.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "pepper_powder_spices",
@@ -602,6 +660,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/pepper_yciim5.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "buriyani_mix_spices",
@@ -622,6 +682,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/buriyani_mix_bvoxj3.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "md_jam_other_products",
@@ -642,6 +704,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/spices/buriyani_mix_bvoxj3.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "watalappam_pack_other_products",
@@ -662,6 +726,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/watalappan_pack_hvt7gr.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
   {
     id: "faluda_other_products",
@@ -682,6 +748,8 @@ const products: ProductType[] = [
         url: "eshop-ceylon/other_products/faluda_ljmfny.webp",
       },
     ],
+    sellCount: 0,
+    productAddedDate: new Date(),
   },
 ];
 

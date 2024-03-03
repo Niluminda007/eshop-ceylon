@@ -1,5 +1,3 @@
-import { StaticImageData } from "next/image";
-
 export interface CategoryType {
   id: number;
   name: string;
@@ -20,6 +18,8 @@ export interface ProductType {
   weight: string;
   inStock: boolean;
   images: ImageType[];
+  sellCount: number;
+  productAddedDate: Date;
 }
 
 export type AppContextType = {

@@ -2,6 +2,7 @@
 
 import ShopByCategory from "@/components/Home/ShopByCategory";
 import HomeSlider from "@/components/HomeSlider/HomeSlider";
+import ProductSliderHome from "@/components/ProductSliderHome/ProductSliderHome";
 import AppProvider from "@/context/AppContext";
 // import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
@@ -38,6 +39,7 @@ const App = () => {
       <AppProvider>
         <HomeSlider />
         <div className="w-full h-[400px] bg-white"></div>
+        <ProductSliderHome />
       </AppProvider>
     </div>
   );

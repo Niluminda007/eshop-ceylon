@@ -35,27 +35,6 @@ const HomeSliderOverlay = ({
             }}></div>
         </div>
       </div>
-      {/* <div
-        style={{
-          transform: `translateX(-${
-            activeImageIndex * (100 / homeSliderData.length)
-          }%)`,
-          transition: "transform 0.5s ease",
-          display: "flex",
-          width: `${homeSliderData.length * 100}%`,
-        }}
-        className="absolute md:top-[50%] top-full  md:h-[30rem] bg-transparent z-10 left-0  transition ease-linear overflow-hidden flex items-center justify-end">
-        {homeSliderData.map((item, index) => (
-          <div
-            key={index}
-            style={{ width: `${100 / homeSliderData.length}%` }}
-            className="flex md:block justify-center md:pt-0 pt-8">
-            <p className="text-black md:text-3xl text-2xl md:w-[30%] w-[60%]    text-center mix-blend-difference">
-              {item.content}
-            </p>
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 };
