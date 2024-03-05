@@ -35,10 +35,9 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="w-full h-full bg-white">
+    <div className="w-full h-full bg-white ">
       <AppProvider>
         <HomeSlider />
-        <div className="w-full h-[400px] bg-white"></div>
         <ProductSliderHome />
       </AppProvider>
     </div>
