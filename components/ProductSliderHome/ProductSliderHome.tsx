@@ -1,85 +1,31 @@
-// import React, { useState } from "react";
-
-// const demoItems = [1, 2, 3, 4, 5, 6, 7, 8];
-// const itemsPerPage = 3;
-
-// const ProductSliderHome = () => {
-//   const [activePortion, setActivePortion] = useState<number>(0);
-
-//   const handleLeft = () => {
-//     setActivePortion((prevActivePortion) => Math.max(0, prevActivePortion - 1));
-//   };
-
-//   const handleRight = () => {
-//     setActivePortion((prevActivePortion) =>
-//       Math.min(
-//         Math.ceil(demoItems.length / itemsPerPage) - 1,
-//         prevActivePortion + 1
-//       )
-//     );
-//   };
-
-//   const translation = -(activePortion * (400 * itemsPerPage));
-//   return (
-//     <div className="w-full h-[30rem] bg-black flex items-center mb-[20rem] relative overflow-visible">
-//       <div
-//         style={{
-//           transform: `translateX(${translation}px)`,
-//           transition: "transform 0.5s ease",
-//         }}
-//         className="w-full h-[20rem] bg-yellow-400 flex items-center gap-20 px-20"
-//       >
-//         {demoItems.map((item, index) => (
-//           <div
-//             key={index}
-//             className="w-[400px] h-[80%] bg-green-500 flex items-center justify-center text-3xl ease-linear transition"
-//           >
-//             {item}
-//           </div>
-//         ))}
-//       </div>
-//       <div className="absolute right-0 bottom-0 bg-green-400 flex items-center gap-4">
-//         <button className="text-white size-8" onClick={handleLeft}>
-//           &larr;
-//         </button>
-//         <button className="text-white size-8" onClick={handleRight}>
-//           &rarr;
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProductSliderHome;
-
+import useMediaQuery from "@/hooks/useMediaQuery";
 import { useFetchProductByCategory } from "@/hooks/useProducts";
 import { ProductType } from "@/types/types";
 import { CldImage } from "next-cloudinary";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
-const demoItems = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const sliderItemsFordesktop = 4;
+const sliderItemsForTablet = 3;
+const sliderItemsForMobile = 2;
 const sliderItemWidth = 300;
-const sliderMaxPages = Math.ceil(demoItems.length / sliderItemsFordesktop);
+const sliderButtonStyles = (
+  direction: string,
+  translateIndex: number,
+  maxTranslateIndex: number
+) => {
+  const minMaxIndex = direction === "LEFT" ? 0 : maxTranslateIndex;
+
+  return `${
+    translateIndex == minMaxIndex
+      ? "bg-transparent text-[rgba(105,104,104,0.6)]"
+      : "hover:scale-[1.2] bg-[rgba(105,104,104,0.6)] text-black "
+  } w-8 h-4 flex items-center justify-center  rounded-md transition ease-linear px-2 py-3`;
+};
 
 const ProductSliderHome = () => {
-  const [activePortion, setActivePortion] = useState<number>(0);
-  const handleLeft = () => {
-    setActivePortion((prevState) => {
-      if (prevState < 1) {
-        return 0;
-      }
-      return prevState - 1;
-    });
-  };
-  const handleRight = () => {
-    setActivePortion((prevState) => {
-      if (prevState == sliderMaxPages - 1) {
-        return prevState;
-      }
-      return prevState + 1;
-    });
-  };
+  const [translateIndex, setTranslateIndex] = useState<number>(0);
+
   const { fetchProductByCategory, isLoading, data } =
     useFetchProductByCategory();
   useEffect(() => {
@@ -91,45 +37,92 @@ const ProductSliderHome = () => {
     featuredProducts = featuredProducts.slice(0, 10);
   }
 
-  const translation = sliderItemsFordesktop * activePortion * sliderItemWidth;
+  const { isDesktop, isTablet, isMobile } = useMediaQuery();
+  const maxTranslateIndex =
+    featuredProducts.length -
+    (isMobile
+      ? sliderItemsForMobile
+      : isTablet
+      ? sliderItemsForTablet
+      : sliderItemsFordesktop);
+
+  const handleLeft = () => {
+    setTranslateIndex((prevIndex) => {
+      return Math.max(prevIndex - 1, 0);
+    });
+  };
+
+  const handleRight = () => {
+    setTranslateIndex((prevIndex) => {
+      return Math.min(prevIndex + 1, maxTranslateIndex);
+    });
+  };
+
+  const translation =
+    translateIndex * 100 * (isMobile ? 1 / 2 : isTablet ? 1 / 3 : 1 / 4);
+
   return (
-    <div className="w-[84vw] h-full mx-auto relative overflow-hidden">
+    <div className="w-[84vw] my-20 h-full mx-auto relative overflow-hidden">
       <ul
-        style={{ transform: `translateX(-${translation}px)` }}
-        className="h-[20rem] list-none flex p-0 m-0 relative  transition ease-linear"
+        style={{ transform: `translateX(-${translation}%)` }}
+        className="list-none flex p-0 m-0 relative  transition ease-out duration-[300ms]"
       >
         {featuredProducts.length > 0 &&
           featuredProducts.map((item, index) => (
             <li
               key={index}
-              className="w-[300px] h-auto  flex items-center justify-center bg-yellow-400 flex-shrink-0 transition ease-linear"
+              className="md:w-1/3 lg:w-1/4 w-1/2 h-auto  flex items-center justify-center  flex-shrink-0 transition ease-linear"
             >
-              <div className="w-full h-full flex flex-col gap-4 items-center justify-center">
-                <CldImage
-                  src={item.images[0].url}
-                  className="object-contain  transition-all ease-linear delay-200 "
-                  alt={`${item.name}_image`}
-                  width="200"
-                  height="400"
-                  format="webp"
-                  quality="50"
-                />
-              </div>
+              <Link href="/">
+                <div className="w-full h-full flex flex-col gap-4 items-center justify-center ">
+                  <div className="w-[200px] height-[250px] overflow-hidden">
+                    <CldImage
+                      src={item.images[0].url}
+                      className="object-contain  transition-all ease-linear hover:scale-110 "
+                      alt={`${item.name}_image`}
+                      width="200"
+                      height="250"
+                      format="webp"
+                      quality="50"
+                    />
+                  </div>
+
+                  <span className="text-xl text-lime-green flex justify-center font-semibold ">
+                    New
+                  </span>
+                  <div className="mt-4 flex flex-col items-center text-black font-semibold">
+                    <span>{item.name}</span>
+                    <span>${item.price}</span>
+                  </div>
+                </div>
+              </Link>
             </li>
           ))}
       </ul>
-      <div className="flex gap-2 absolute right-0 top-[50%]">
+      <div className="flex absolute right-8 top-[50%]">
         <button
-          onClick={handleLeft}
-          className="w-8 h-4 flex items-center justify-center bg-white text-black rounded-md transition ease-linear hover:scale-[1.2]"
-        >
-          &larr;
-        </button>
-        <button
+          disabled={translateIndex == maxTranslateIndex}
           onClick={handleRight}
-          className="w-8 h-4 flex items-center justify-center bg-white text-black rounded-md transition ease-linear hover:scale-[1.2]"
+          className={sliderButtonStyles(
+            "RIGHT",
+            translateIndex,
+            maxTranslateIndex
+          )}
         >
           &rarr;
+        </button>
+      </div>
+      <div className="flex absolute left-8 top-[50%]">
+        <button
+          disabled={translateIndex == 0}
+          onClick={handleLeft}
+          className={sliderButtonStyles(
+            "LEFT",
+            translateIndex,
+            maxTranslateIndex
+          )}
+        >
+          &larr;
         </button>
       </div>
     </div>
