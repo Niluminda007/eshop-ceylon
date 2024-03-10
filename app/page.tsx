@@ -3,6 +3,7 @@
 import ShopByCategory from "@/components/Home/ShopByCategory";
 import HomeSlider from "@/components/HomeSlider/HomeSlider";
 import ProductSliderHome from "@/components/ProductSliderHome/ProductSliderHome";
+import SpecialProductSliderArea from "@/components/SpecialProductSliderArea/SpecialProductSliderArea";
 import AppProvider from "@/context/AppContext";
 // import LoadingScreen from "@/components/LoadingScreen/LoadingScreen";
 
@@ -35,10 +36,11 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="w-full h-full bg-white ">
+    <div className="w-full flex flex-col bg-white">
       <AppProvider>
         <HomeSlider />
-        <ProductSliderHome />
+        {/* <ProductSliderHome /> */}
+        <SpecialProductSliderArea />
       </AppProvider>
     </div>
   );

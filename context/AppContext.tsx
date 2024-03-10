@@ -1,12 +1,14 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { AppContextType, CategoryType } from "@/types/types";
+import { AppContextType, CategoryType, ProductType } from "@/types/types";
 import { useFetchCategories } from "@/hooks/useCategory";
+import { useFetchProductByCategory } from "@/hooks/useProducts";
 
 export const AppContext = createContext<AppContextType>({
   activeCategory: "All",
   changeActiveCategory: () => {},
-  categoires: [],
-  isLoading: true,
+  products: [],
+  newProducts: [],
+  bestSellingProducts: [],
 });
 
 type AppProviderProps = {
@@ -15,24 +17,74 @@ type AppProviderProps = {
 
 const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const [activeCategory, setActiveCategory] = useState<string>("All");
-  const [categoires, setCategories] = useState<CategoryType[]>([]);
-  const { data, isLoading, fetchCategories } = useFetchCategories();
+  const [products, setProducts] = useState<ProductType[]>([]);
+  const [bestSellingProducts, setBestSellingProducts] = useState<ProductType[]>(
+    []
+  );
+  const [newProducts, setNewProducts] = useState<ProductType[]>([]);
+  // const [categoires, setCategories] = useState<CategoryType[]>([]);
+  // const { data, isLoading, fetchCategories } = useFetchCategories();
+
+  // useEffect(() => {
+  //   fetchCategories();
+  // }, []);
+  // useEffect(() => {
+  //   if (!isLoading && data != null) {
+  //     setCategories(data);
+  //   }
+  // }, [data, isLoading]);
+  const { data, isLoading, fetchProductByCategory } =
+    useFetchProductByCategory();
   useEffect(() => {
-    fetchCategories();
+    fetchProductByCategory("All");
   }, []);
+
   useEffect(() => {
     if (!isLoading && data != null) {
-      setCategories(data);
+      setProducts(data);
     }
   }, [data, isLoading]);
+  useEffect(() => {
+    if (products.length > 0) {
+      setNewProducts(getNewProducts());
+      setBestSellingProducts(getBestSellingProducts());
+    }
+  }, [products]);
+
   const changeActiveCategory = (newCategory: string) => {
     setActiveCategory(newCategory);
+  };
+  const getBestSellingProducts = (): ProductType[] => {
+    if (products.length > 0) {
+      const sortedProducts = [...products].sort(
+        (a, b) => b.sellCount - a.sellCount
+      );
+      return sortedProducts.slice(0, 10);
+    }
+    return [];
+  };
+
+  const getNewProducts = (): ProductType[] => {
+    if (products.length > 0) {
+      const sortedProducts = [...products].sort(
+        (a, b) =>
+          new Date(a.productAddedDate).getTime() -
+          new Date(b.productAddedDate).getTime()
+      );
+      return sortedProducts.slice(0, 10);
+    }
+    return [];
   };
 
   return (
     <AppContext.Provider
-      value={{ activeCategory, changeActiveCategory, categoires, isLoading }}
-    >
+      value={{
+        activeCategory,
+        changeActiveCategory,
+        products,
+        newProducts,
+        bestSellingProducts,
+      }}>
       {children}
     </AppContext.Provider>
   );

@@ -18,7 +18,7 @@ const HomeSlider: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-full max-h-screen relative  flex items-center ">
+    <div className="w-full relative  flex md:aspect-[16/9] aspect-[9/8] md:max-h-[calc(1600px*9/16)] max-h-[calc(1600px*9/8)] scale-[1.2] md:scale-[1] ">
       <HomeSliderImageArea
         currentSlider={currentSlider}
         activeImageIndex={activeImageIndex}

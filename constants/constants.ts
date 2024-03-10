@@ -1,4 +1,8 @@
-import { CategoryType, HomeSliderType } from "@/types/types";
+import {
+  CategoryType,
+  HomeSliderType,
+  SpecialProductSliderData,
+} from "@/types/types";
 import spiceCategoryImage from "@/public/assets/spices_category.jpg";
 import bisuitsCategoryImage from "@/public/assets/biscuits_category.jpg";
 import packagedCategoryImage from "@/public/assets/packaged_category.png";
@@ -106,5 +110,18 @@ export const homeSliderData: HomeSliderType[] = [
     id: 3,
     image: "eshop-ceylon/image_slider/slider_img_3_nzrygd.png",
     content: "Check Out our new Products",
+  },
+];
+
+export const specialProductSliderData: SpecialProductSliderData[] = [
+  {
+    id: 1,
+    name: "New Arrivals",
+    fetch_path: "/api/fetch/products/new-arrivals",
+  },
+  {
+    id: 2,
+    name: "Best Selling",
+    fetch_path: "/api/fetch/products/best-selling",
   },
 ];

@@ -25,8 +25,11 @@ export interface ProductType {
 export type AppContextType = {
   activeCategory: string;
   changeActiveCategory: (category: string) => void;
-  categoires: CategoryType[];
-  isLoading: Boolean;
+  // categoires: CategoryType[];
+  // isLoading: Boolean;
+  products: ProductType[];
+  newProducts: ProductType[];
+  bestSellingProducts: ProductType[];
 };
 
 export type UserLogin = {
@@ -56,4 +59,10 @@ export type HomeSliderType = {
   id: number;
   image: string;
   content: string;
+};
+
+export type SpecialProductSliderData = {
+  id: number;
+  name: string;
+  fetch_path: string;
 };
