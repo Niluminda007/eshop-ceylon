@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "300px", // Extra small screens (below 520px)
+        sm: "520px", // Small screens (between 520px and 767px)
+        md: "768px", // Medium screens (between 768px and 1023px)
+        lg: "1024px", // Large screens (1024px and above)
+      },
       colors: {
         "gray-light": "#eeeeee",
         "dark-black": "#060606",

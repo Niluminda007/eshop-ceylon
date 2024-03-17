@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useFetchProductByCategory } from "@/hooks/useProducts";
 import { ProductType } from "@/types/types";
 import { CldImage } from "next-cloudinary";
 import Link from "next/link";
@@ -13,12 +12,22 @@ type ProductSliderHomeProps = {
 const ProductSliderHome = ({ data }: ProductSliderHomeProps) => {
   const [translateIndex, setTranslateIndex] = useState<number>(0);
 
-  const { isTablet, isMobile } = useMediaQuery();
-  const config = isMobile ? "mobile" : isTablet ? "tablet" : "desktop";
+  const { isMobile, isTablet, isTabletLandscape } = useMediaQuery();
+  const config = isMobile
+    ? "mobile"
+    : isTablet
+    ? "tablet"
+    : isTabletLandscape
+    ? "tabletLandscape"
+    : "desktop";
 
   const getMaxTranslateIndex = (): number => {
     return data.length - productSliderItemConfig[config].itemCount;
   };
+
+  useEffect(() => {
+    setTranslateIndex(0);
+  }, [data]);
 
   const maxTranslateIndex = getMaxTranslateIndex();
 
@@ -41,13 +50,13 @@ const ProductSliderHome = ({ data }: ProductSliderHomeProps) => {
         {data.map((item, index) => (
           <li
             key={index}
-            className="md:w-1/3 lg:w-1/4 w-1/2 h-auto flex items-center justify-center flex-shrink-0 transition ease-linear">
+            className="md:w-1/3 lg:w-1/4 sm:w-1/2 w-full  h-auto flex items-center justify-center flex-shrink-0 transition ease-linear">
             <Link href="/" passHref>
               <div className="w-full h-full flex flex-col gap-4 items-center justify-center">
                 <div className="w-[200px] h-[250px] overflow-hidden flex items-center">
                   <CldImage
                     src={item.images[0].url}
-                    className="object-contain  transition-all ease-linear hover:scale-110 "
+                    className="object-contain  transition-all ease-linear hover:scale-110 w-[200px] h-[250px] "
                     alt={`${item.name}_image`}
                     width="200"
                     height="250"

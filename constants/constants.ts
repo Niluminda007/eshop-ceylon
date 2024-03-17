@@ -1,14 +1,7 @@
-import {
-  CategoryType,
-  HomeSliderType,
-  SpecialProductSliderData,
-} from "@/types/types";
+import { CategoryType, HomeSliderType } from "@/types/types";
 import spiceCategoryImage from "@/public/assets/spices_category.jpg";
 import bisuitsCategoryImage from "@/public/assets/biscuits_category.jpg";
 import packagedCategoryImage from "@/public/assets/packaged_category.png";
-import swanImage from "@/public/images/slider/swan.jpg";
-import flowerImage from "@/public/images/slider/flower.jpg";
-import cuteAnimal from "@/public/images/slider/cute_animal.jpg";
 
 export const categoires: CategoryType[] = [
   { id: 0, name: "All", path: "All", topLevelCategory: false },
@@ -85,16 +78,6 @@ export const navCategories = [
   },
 ];
 
-// export const homeSliderData: HomeSliderType[] = [
-//   {
-//     id: 1,
-//     image: swanImage,
-//     content: "Demo text displaying what should render",
-//   },
-//   { id: 2, image: cuteAnimal, content: "yes this is a demo content" },
-//   { id: 3, image: flowerImage, content: "nahhh, are you sure" },
-// ];
-
 export const homeSliderData: HomeSliderType[] = [
   {
     id: 1,
@@ -113,15 +96,15 @@ export const homeSliderData: HomeSliderType[] = [
   },
 ];
 
-export const specialProductSliderData: SpecialProductSliderData[] = [
-  {
+export const homeProductSliderData = {
+  "New Arrivals": {
     id: 1,
     name: "New Arrivals",
-    fetch_path: "/api/fetch/products/new-arrivals",
+    fetch_path: "/fetch/products/new-arrivals",
   },
-  {
+  "Best Selling": {
     id: 2,
     name: "Best Selling",
-    fetch_path: "/api/fetch/products/best-selling",
+    fetch_path: "/fetch/products/best-selling",
   },
-];
+};

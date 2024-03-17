@@ -66,3 +66,14 @@ export type SpecialProductSliderData = {
   name: string;
   fetch_path: string;
 };
+
+export type UseFetchProductPayloadType = {
+  payloadName: string;
+  payload: string;
+};
+
+export type UseFetchProductType = {
+  http_Method: string;
+  end_point: string;
+  payload: UseFetchProductPayloadType | {};
+};
